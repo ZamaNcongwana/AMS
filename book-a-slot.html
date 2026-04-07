@@ -1,100 +1,275 @@
-<!DOCTYPE html> 
-<html lang="en"> 
-<head> 
-<meta charset="UTF-8"> 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta property="og:title" content="Transform Your Look at Anele Magane Salon!">
-<meta name="description" content="Are you ready to elevate your hairstyle? Look no further than Anele Magane Salon, your go-to destination for stunning hair transformations in Hammarsdale! Owned and operated by the talented young entrepreneur Anele Magane, our salon offers a range of professional hair services that cater to all your styling needs."> 
-<title>Anele-Magane-Salon</title> 
-<meta name="description" content="Sisterhood Beautique in Hammarsdale offers professional hair services, beauty products and a luxury salon experience led by entrepreneur Nomfundo Miya."> 
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet"> 
 
-<style> 
-body{ margin:0; font-family:'Poppins',sans-serif; background:#fff7fb; color:#333; scroll-behavior:smooth; } 
+<title>Anele Magane Salon | Booking</title>
 
-/* HERO */ 
-.hero{ height:90vh; background:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url('https://images.unsplash.com/photo-1522335789203-aabd1fc54bc9'); background-size:cover; background-position:center; display:flex; align-items:center; justify-content:center; text-align:center; color:white; } 
-.hero h1{font-size:42px;margin:0;
-}
- 
-.hero p{font-size:18px;
-} 
+<meta name="description" content="Book your appointment at Anele Magane Salon in Hammarsdale. Professional installations, ponytails and luxury hair services.">
 
-.btn{ background:#ff4da6; padding:14px 28px; border-radius:30px; color:white; text-decoration:none; display:inline-block; margin-top:15px; 
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+<style>
+
+/* ---------------- GENERAL ---------------- */
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:'Poppins',sans-serif;
 }
 
-/* SECTION */ .section{ max-width:1100px; margin:auto; padding:50px 20px; 
+body{
+background:#4b1f15;
+color:white;
+scroll-behavior:smooth;
 }
 
-h2{ color:#ff4da6; text-align:center; margin-bottom:30px; 
-}
-/* CARDS */ .card{ background:white; padding:25px; border-radius:12px; box-shadow:0 4px 15px rgba(0,0,0,0.1); margin:15px; 
-} 
+/* ---------------- NAV ---------------- */
 
-.grid{ display:flex; flex-wrap:wrap; justify-content:center; 
-}
-
-/* GALLERY */ 
-.gallery img{ width:300px; border-radius:10px; margin:10px; 
-} 
-
-/* REVIEW */ 
-.review{ background:#ffe6f2; 
+nav{
+position:fixed;
+width:100%;
+background:rgba(0,0,0,0.6);
+backdrop-filter:blur(8px);
+padding:15px;
+z-index:1000;
+text-align:center;
 }
 
-/* WHATSAPP BUTTON */ .whatsapp{ position:fixed; bottom:20px; right:20px; background:#25D366; color:white; padding:15px 18px; border-radius:50%; font-size:22px; text-decoration:none; 
+nav a{
+color:white;
+text-decoration:none;
+margin:0 15px;
+font-weight:500;
 }
 
-/* FOOTER */ 
-footer{ background:#111; color:white; text-align:center; padding:25px; 
+/* ---------------- HERO ---------------- */
+
+.hero{
+height:100vh;
+background:
+linear-gradient(rgba(0,0,0,.6),rgba(0,0,0,.7)),
+url("https://images.unsplash.com/photo-1600948836101-f9ffda59d250");
+background-size:cover;
+background-position:center;
+display:flex;
+align-items:center;
+justify-content:center;
+text-align:center;
+padding:20px;
 }
-</style> 
 
-</head> 
-<body> 
-<!-- HERO --><iframe width="100%" height="500" src="https://www.youtube.com/embed/-R-HVov-oK0?si=imWfFwmLUQtzHGJz" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin"></iframe>  
-<!-- Embedded booking begin --><div class="embedded-booking" data-url="https://sisterhoodbeautique.trafft.com" data-query="&t=s&uuid=919e0156-0a72-45f5-afb6-2feaef6404e2" data-lang="en" data-autoresize="0" data-showsidebar="1" data-showservices="0" style="min-width: 100%; height: 768px;"></div><script type="text/javascript" src="https://sisterhoodbeautique.trafft.com/embed.js" async></script><!-- Embedded booking end --> 
-<!-- HERO --> 
-<section class="hero"> 
-<div> <h1>Transform Your Look at Anele Magane Salon!
-</h1> <p>Are you ready to elevate your hairstyle? Look no further than Anele Magane Salon, your go-to destination for stunning hair transformations in Hammarsdale! Owned and operated by the talented young entrepreneur Anele Magane, our salon offers a range of professional hair services that cater to all your styling needs.</p> 
-<a href="#booking" class="btn">Book Appointment</a> </div> </section> 
+.hero h1{
+font-size:45px;
+margin-bottom:15px;
+}
+
+.hero p{
+max-width:700px;
+margin:auto;
+opacity:.9;
+}
+
+.btn{
+display:inline-block;
+margin-top:25px;
+padding:14px 30px;
+background:#c58a5b;
+color:white;
+border-radius:40px;
+text-decoration:none;
+transition:.3s;
+}
+
+.btn:hover{
+background:#e2a56f;
+}
+
+/* ---------------- SECTIONS ---------------- */
+
+.section{
+max-width:1100px;
+margin:auto;
+padding:70px 20px;
+}
+
+.section h2{
+text-align:center;
+margin-bottom:40px;
+font-size:32px;
+}
+
+/* ---------------- SERVICES ---------------- */
+
+.grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:20px;
+}
+
+.card{
+background:rgba(255,255,255,0.08);
+padding:25px;
+border-radius:15px;
+backdrop-filter:blur(6px);
+transition:.3s;
+}
+
+.card:hover{
+transform:translateY(-6px);
+}
+
+/* ---------------- GALLERY ---------------- */
+
+.gallery img{
+width:100%;
+border-radius:12px;
+}
+
+/* ---------------- BOOKING ---------------- */
+
+.booking{
+background:#2b120b;
+}
+
+/* ---------------- WHATSAPP ---------------- */
+
+.whatsapp{
+position:fixed;
+bottom:20px;
+right:20px;
+background:#25D366;
+color:white;
+font-size:24px;
+padding:15px 18px;
+border-radius:50%;
+text-decoration:none;
+}
+
+/* ---------------- FOOTER ---------------- */
+
+footer{
+text-align:center;
+background:black;
+padding:25px;
+margin-top:40px;
+}
+
+</style>
+</head>
+
+<body>
+
+<!-- NAV -->
+<nav>
+<a href="#">Home</a>
+<a href="#services">Services</a>
+<a href="#booking">Booking</a>
+</nav>
 
 
-<!-- SERVICES --> 
-<section class="section"> 
-<h2>Our Services</h2> 
-<div class="grid"> 
-<div class="card">At Anele Magane Salon, we pride ourselves on providing quality services that leave you looking fabulous. Check out our popular offerings:
-</div> 
-<div class="card">Frontal Ponytail Including Closure Plucking - 
-   Get a sleek and stylish frontal ponytail that's perfect for any occasion. Our closure plucking ensures a natural look that blends seamlessly.
-</div> 
-<div class="card">Installation Including Style -  
-   Enjoy a full installation service that includes a stylish finish. We'll make sure you leave the salon feeling confident and beautiful.
-</div> 
-<div class="card">Basic Installation -  
-   Looking for something simple yet elegant? Our basic installation service is perfect for those who want a fresh look without breaking the bank.
-</div> 
- 
-</section> 
+<!-- HERO -->
+<section class="hero">
+<div>
+<h1>Transform Your Look</h1>
 
-<!-- PRICE LIST --> 
-<section class="section"> 
-<h2>Price List</h2> 
+<p>
+Welcome to Anele Magane Salon — your destination for elegant,
+professional hair transformations in Hammarsdale.
+Book your slot and experience luxury styling.
+</p>
+
+<a href="#booking" class="btn">Book Appointment</a>
+</div>
+</section>
+
+
+<!-- SERVICES -->
+<section id="services" class="section">
+<h2>Our Services</h2>
+
 <div class="grid">
-<div class="card">Frontal Ponytail Including Closure Plucking - R220  </div>     
-<div class="card">Installation Including Style - R200  </div> 
-<div class="card">Basic Installation - R120  </div> 
- 
-<!-- BOOKING --> 
-<section id="booking" class="section"> 
-<h2>Book Your Appointment</h2> 
-<a class="btn" href=""> Book via WhatsApp </a> 
-</section> https://wa.me/+27691400313
+
+<div class="card">
+<h3>Frontal Ponytail</h3>
+<p>
+Includes closure plucking for a natural flawless finish.
+Perfect for events and everyday confidence.
+</p>
+</div>
+
+<div class="card">
+<h3>Installation Including Style</h3>
+<p>
+Full professional installation with styling finish
+to make sure you leave looking beautiful.
+</p>
+</div>
+
+<div class="card">
+<h3>Basic Installation</h3>
+<p>
+Simple, clean and elegant installation ideal for
+a fresh affordable look.
+</p>
+</div>
+
+</div>
+</section>
 
 
-<!-- WHATSAPP FLOAT --> 
-<a href="https://wa.me/+27691400313" class="whatsapp">💬</a> <footer> <p>Â© 2026 Sisterhood Beautique | Hammarsdale</p> </footer> 
-</body> 
-</html> 
+<!-- VIDEO SECTION -->
+<section class="section">
+<h2>Salon Experience</h2>
+
+<iframe width="100%" height="400"
+src="https://www.youtube.com/embed/-R-HVov-oK0"
+title="Salon Video"
+allowfullscreen>
+</iframe>
+
+</section>
+
+
+<!-- BOOKING SECTION -->
+<section id="booking" class="section booking">
+
+<h2>Book Your Appointment</h2>
+
+<!-- Embedded booking begin -->
+<div class="embedded-booking"
+data-url="https://sisterhoodbeautique.trafft.com"
+data-query="&t=s&uuid=919e0156-0a72-45f5-afb6-2feaef6404e2"
+data-lang="en"
+data-autoresize="1"
+data-showsidebar="1"
+data-showservices="0"
+style="width:100%;height:800px;">
+</div>
+
+<script src="https://sisterhoodbeautique.trafft.com/embed.js" async></script>
+<!-- Embedded booking end -->
+
+<br><br>
+
+<a href="https://wa.me/+27691400313" class="btn">
+Book via WhatsApp
+</a>
+
+</section>
+
+
+<!-- WHATSAPP FLOAT -->
+<a href="https://wa.me/+27691400313" class="whatsapp">💬</a>
+
+
+<!-- FOOTER -->
+<footer>
+<p>© 2026 Anele Magane Salon | Hammarsdale</p>
+</footer>
+
+</body>
+</html>
